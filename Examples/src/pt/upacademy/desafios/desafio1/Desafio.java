@@ -1,24 +1,32 @@
 package pt.upacademy.desafios.desafio1;
 
 public class Desafio {
+	private int count;
+	private int big3Count;
+	private int big5Count;
+	
 
 	public Desafio(int i) {
-		// TODO Auto-generated constructor stub
+		this.count = i;
 	}
 
 	public void run() {
-		// TODO Auto-generated method stub
-		
+		for (int i = 1; i <= count; i++) {
+			if (i % 3 == 0) {
+				big3Count++;
+			}
+			if (i % 5 == 0) {
+				big5Count++;
+			}
+		}
 	}
 
 	public int getBig3Count() {
-		// TODO Auto-generated method stub
-		return 0;
+		return this.big3Count;
 	}
 
 	public int getBig5Count() {
-		// TODO Auto-generated method stub
-		return 0;
+		return this.big5Count;
 	}
 
 }

@@ -25,5 +25,4 @@ class DesafioTest {
 	void test4() {
 		assertEquals(366, Desafio.countDays("01 01 2016", "01 01 2017"));
 	}
-
 }
